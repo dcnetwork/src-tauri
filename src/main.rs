@@ -13,6 +13,7 @@ fn hello(name: &str) -> Result<String, String> {
     Ok(format!("Hello, {}", name))
   }
 }
+
 fn main() {
   tauri::Builder::default()
     .invoke_handler(tauri::generate_handler![hello])
