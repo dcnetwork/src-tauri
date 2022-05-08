@@ -2,7 +2,6 @@
 //   all(not(debug_assertions), target_os = "windows"),
 //   windows_subsystem = "windows"
 // )]
-
 #[tauri::command]
 fn hello(name: &str) -> Result<String, String> {
   // This is a very simplistic example but it shows how to return a Result
