@@ -20,6 +20,7 @@ async fn get_started(name: &str) -> Result<String, String> {
 
     let node = DcNodeInit::new().await;
 
+
     if false {
         Err("Name should not contain spaces".to_string())
     } else {
@@ -27,7 +28,6 @@ async fn get_started(name: &str) -> Result<String, String> {
             encode_upper(node.address)
         )
     }
-
 }
 
 
